@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9C27B0"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/DealerTV"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="80dp"
+        android:background="#E91E63"
+        android:text="Dealer"
+        android:textColor="#039BE5"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498"
+        app:layout_goneMarginBottom="80dp"
+        app:layout_goneMarginStart="20dp"
+        app:layout_goneMarginTop="80dp" />
+
+    <TextView
+        android:id="@+id/PatTV"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="30dp"
+
+        android:layout_marginTop="30dp"
+        android:background="#0F7DD3"
+        android:text="Pat"
+        android:textSize="34sp"
+        app:layout_constraintStart_toEndOf="@+id/DealerTV"
+        app:layout_constraintTop_toBottomOf="@+id/ChrisTV" />
+
+    <TextView
+        android:id="@+id/ChrisTV"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="30dp"
+        android:background="#38716C"
+        android:text="Chris"
+        android:textSize="34sp"
+        app:layout_constraintStart_toEndOf="@+id/DealerTV"
+        tools:layout_editor_absoluteY="290dp" />
+
+    <TextView
+        android:id="@+id/AndyTV"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="#C12525"
+        android:text="Andy"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/ChrisTV"
+        app:layout_constraintStart_toEndOf="@+id/DealerTV" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
